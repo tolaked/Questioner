@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Domine|Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Questioner | User Dashboard</title>
+</head>
+
+<body>
+  <div class="small__container__fix">
+    <header class="header">
+      <div class="dashboard__container">
+        <div class="header__content">
+          <a href="index.html" class="header__logo header__logo__dashboard--back">&twoheadleftarrow; Back</a>
+          <!--/.header__logo-->
+
+          <nav class="nav">
+            <ul class="nav__item">
+              <li class="nav__list"><i class="fas fa-user"></i> <span class="dashboard-username">Yemi</span></li>
+              <li class="nav__list"><a href="index.html" class="nav__link btn btn__primary--color logout">Logout</a></li>
+            </ul>
+          </nav>
+          <!--/.nav-->
+        </div>
+      </div>
+    </header>
+    <!--/.main-header-->
+
+    <section class="dashboard padding-top-fix-dashboard">
+      <div class="dashboard__container">
+        <div class="dashboard-content">
+          <div class="dashboard-content__sidebar">
+            <ul class="sidebar__item">
+              <li class="sidebar__item__list">
+                <h4 class="sidebar__item__list__heading">Total Posted Question(s)</h4>
+                <span class="sidebar__item__list__value total-questions">0</span>
+              </li>
+              <li class="sidebar__item__list">
+                <h4 class="sidebar__item__list__heading">Total Comment(s)</h4>
+                <span class="sidebar__item__list__value total-comments">0</span>
+              </li>
+            </ul>
+          </div>
+          <!--/.dashboard-content__sidebar-->
+
+          <div class="dashboard-content__main__content">
+            <div class="scheduled-upcoming-meetup-table">
+              <h3 class="card-header">Scheduled Upcoming Meetup</h3>
+              <!--/.card-header-->
+
+              <ul class="feedback-message">
+
+              </ul>
+
+              <div class="card-body">
+                <div class="table-container">
+                  <table class="table">
+                    <thead class="table-head">
+                      <tr>
+                        <th>Meetup Topic</th>
+                        <th>Location</th>
+                        <th>Date</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="table-body">
+
+                    </tbody>
+
+                  </table>
+                </div>
+                <!--/.table-container-->
+
+                <div class="pagination-container">
+                  <div class="pagination-info">
+                    Showing 1 to 10 of 4 entries
+                  </div>
+                  <div class="pagination">
+                    <a href="#" class="pagination-link">&laquo;</a>
+                    <a href="#" class="pagination-link active">1</a>
+                    <a href="#" class="pagination-link">2</a>
+                    <a href="#" class="pagination-link">3</a>
+                    <a href="#" class="pagination-link">4</a>
+                    <a href="#" class="pagination-link">&raquo;</a>
+                  </div>
+                </div>
+              </div>
+              <!--/.card-body-->
+              <div class="card-footer">
+                Updated Today at 11:59 PM
+              </div>
+            </div>
+          </div>
+          <!--/.dashboard-content__main__content-->
+
+          <div class="overlay">
+            <div class="spinner-icon-container">
+              <svg version="1.2" class="spinner-icon" height="80" width="125" xmlns="http://www.w3.org/2000/svg"
+                viewport="0 0 125 80" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path fill="none" stroke="#ffffff" stroke-miterlimit="20" d="M52,21 L81,40 L52,60 Z"></path>
+              </svg>
+            </div>
+          </div>
+          <!--/.overlay-->
+
+        </div>
+        <!--/.dashboard__content-->
+      </div>
+    </section>
+    <!--/.dashboard-->
+
+  </div>
+  <!--/.small__container__fix-->
+
+  <section class="footer">
+    <div class="dashboard__container">
+      <div class="footer__content">
+        <ul class="footer__item">
+          <li class="footer__list">
+            <span class="footer-heart-container">Made with <i class="fas fa-heart"></i> By Yemi</span>
+          </li>
+
+          <li class="footer__list">
+            <span>&copy; Questioner 2019</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--/.footer-->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+  <script src="js/user-dashboard.js"></script>
+</body>
+
+</html>

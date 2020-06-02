@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:600|Domine|Playfair+Display" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Questioner | Sign In</title>
+</head>
+
+<body>
+  <div class="small__container__fix">
+    <header class="header">
+      <div class="container">
+        <div class="header__content">
+          <a href="index.html" class="header__logo">
+            <h1 class="header__logo--title">Questioner</h1>
+          </a>
+          <!--/.header__logo-->
+
+          <a href="#" class="menu"><span class="menu-icon-container"><i class="fas fa-bars"></i></span></a>
+
+          <nav class="nav">
+            <ul class="nav__item">
+              <li class="nav__list"><a href="meetups.html" class="nav__link">All meetups</a></li>
+              <li class="nav__list"><a href="sign-in.html" class="nav__link btn btn__primary--color btn__primary--color--outline">sign
+                  in</a></li>
+              <li class="nav__list"><a href="sign-up.html" class="nav__link btn btn__primary--color">sign up</a></li>
+            </ul>
+          </nav>
+          <!--/.nav-->
+        </div>
+      </div>
+    </header>
+    <!--/.main-header-->
+
+    <section class="sign-in padding-top-fix">
+      <div class="container">
+        <h3 class="form__headline">Welcome back!</h3>
+        <ul class="feedback-message">
+
+        </ul>
+        <div class="form__container">
+          <form action="" class="form" id="sign-up-form">
+            <div class="form__input__group">
+              <label for="sign-in-email" class="form__label">Email <span class="required">*</span></label>
+              <input type="text" class="form__input email" id="sign-in-email" placeholder="you@example.com" autofocus
+                required>
+              <small class="error"></small>
+            </div>
+            <!--/.form__input__container-->
+
+            <div class="form__input__group">
+              <label for="sign-in-password" class="form__label email">Password <span class="required">*</span></label>
+              <input type="password" class="form__input password" id="sign-in-password" placeholder="" required>
+              <small class="error"></small>
+              <a href="forgot-password.html" class="forgot__password">forgot password</a>
+            </div>
+            <!--/.form__input__container-->
+
+            <button type="submit" class="btn btn__primary--color btn__primary--color--submit" id="sign-in-btn">Sign In</button>
+          </form>
+        </div>
+
+        <div class="new-user-signup">
+          <small>Don't have an account? <a href="sign-up.html" class="sign-up-link">Sign up</a></small>
+        </div>
+
+        <div class="overlay">
+          <div class="spinner-icon-container">
+            <svg version="1.2" class="spinner-icon" height="80" width="125" xmlns="http://www.w3.org/2000/svg" viewport="0 0 125 80"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <path fill="none" stroke="#ffffff" stroke-miterlimit="20" d="M52,21 L81,40 L52,60 Z"></path>
+            </svg>
+          </div>
+        </div>
+        <!--/.overlay-->
+      </div>
+    </section>
+    <!--/.sign-up-->
+  </div>
+
+  <section class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <ul class="footer__item">
+          <li class="footer__list">
+            <span class="footer-heart-container">Made with <i class="fas fa-heart"></i> By Yemi</span>
+          </li>
+
+          <li class="footer__list">
+            <span>&copy; Questioner 2019</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--/.footer-->
+  <script src="js/signin.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

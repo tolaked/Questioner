@@ -1,0 +1,24 @@
+{
+  "name": "meet-up-questioner",
+  "version": "1.0.0",
+  "description": "Crowd-source questions for a meetup",
+  "main": "./app/app.js",
+  "scripts": {
+    "start": "nodemon ./app/app.js --exec babel-node",
+    "deploy": "gh-pages -d UI",
+    "test": "nyc --reporter=html --reporter=text mocha --require @babel/register --require babel-polyfill ./app/test/ --recursive --timeout 20000 --exit",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov | coveralls",
+    "showcoverage": "start ./coverage/index.html",
+    "lint": "./node_modules/.bin/eslint app --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abidex4yemi/meet-up-questioner.git"
+  },
+  "author": "Sulaiman Hammed Abidemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abidex4yemi/meet-up-questioner/issues"
+  }
+
+}
